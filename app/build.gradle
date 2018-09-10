@@ -18,21 +18,23 @@ repositories {
 }
 
 android {
-    compileSdkVersion 24
+    compileSdkVersion 27
     //noinspection GradleDependency
-    buildToolsVersion "23.0.2"
+    buildToolsVersion "27.0.3"
     defaultConfig {
-        applicationId "com.zulip.android"
-        minSdkVersion 13
+        applicationId "com.zulip.android.satchat"
+        minSdkVersion 14
         //noinspection OldTargetApi
         targetSdkVersion 23
 
         versionCode 29
         versionName "1.3.1"
 
-        testApplicationId "com.zulip.android.test"
+        testApplicationId "com.zulip.android.satchat.test"
         testInstrumentationRunner "android.test.InstrumentationTestRunner"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+        vectorDrawables.useSupportLibrary = true
     }
     signingConfigs {
         debug {
@@ -44,21 +46,16 @@ android {
     }
     buildTypes {
         debug {
-            applicationIdSuffix '.dev'
-            manifestPlaceholders = [fabricKey: ""]
-            ext.enableCrashlytics = false
-            buildConfigField "String", "GOOGLE_CLIENT_ID", "\"835904834568-77mtr5mtmpgspj9b051del9i9r5t4g4n.apps.googleusercontent.com\""
+            buildConfigField 'String', 'GOOGLE_CLIENT_ID', '"302274739485-1928tahgrhdptoskk4c35q0dqhc55su2.apps.googleusercontent.com"'
         }
+
         release {
-            minifyEnabled false
-            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
-            manifestPlaceholders = [fabricKey: (project.findProperty("fabricKey") == null) ? "" : project.property("fabricKey")]
-            buildConfigField "String", "GOOGLE_CLIENT_ID", "\"835904834568-77mtr5mtmpgspj9b051del9i9r5t4g4n.apps.googleusercontent.com\""
+            buildConfigField 'String', 'GOOGLE_CLIENT_ID', '"302274739485-r8vvthm4u59s3aa7osj4fb3a39hcmvva.apps.googleusercontent.com"'
         }
 
     }
     compileOptions {
-        targetCompatibility JavaVersion.VERSION_1_7
+        targetCompatibility JavaVersion.VERSION_1_8
     }
     productFlavors {
     }
@@ -69,11 +66,11 @@ android {
 }
 
 dependencies {
-    compile 'com.android.support:appcompat-v7:24.1.1'
-    compile 'com.android.support:design:24.1.1'
-    compile 'com.android.support:recyclerview-v7:24.1.1'
-    compile 'com.google.android.gms:play-services-gcm:8.4.0'
-    compile 'com.google.android.gms:play-services-auth:8.4.0'
+    compile 'com.android.support:appcompat-v7:27.1.1'
+    compile 'com.android.support:design:27.1.1'
+    compile 'com.android.support:recyclerview-v7:27.1.1'
+    compile 'com.google.android.gms:play-services-gcm:9.0.0'
+    compile 'com.google.android.gms:play-services-auth:9.0.0'
     compile 'com.squareup.retrofit2:retrofit:2+'
     compile 'com.squareup.okhttp3:logging-interceptor:3+'
     compile 'com.squareup.retrofit2:converter-gson:2+'
@@ -84,12 +81,12 @@ dependencies {
     compile 'org.ccil.cowan.tagsoup:tagsoup:1.2.1'
     compile 'com.squareup.picasso:picasso:2.5.2'
     //noinspection GradleCompatible
-    compile 'com.android.support:customtabs:24.1.1'
+    compile 'com.android.support:customtabs:27.1.1'
     compile 'com.github.bumptech.glide:glide:3.8.0'
-    compile 'com.android.support:support-v4:24.1.0'
+    compile 'com.android.support:support-v4:27.1.1'
     compile 'com.theartofdev.edmodo:android-image-cropper:2.3.+'
-    compile 'com.github.chrisbanes:PhotoView:1.3.0'
-    compile('com.crashlytics.sdk.android:crashlytics:2.6.7@aar') {
+    compile 'com.github.chrisbanes:PhotoView:+'
+    compile('com.crashlytics.sdk.android:crashlytics:2.9.5@aar') {
         transitive = true;
     }
 
@@ -113,5 +110,3 @@ dependencies {
     compile project(':customLintAAR')
 
 }
-
-apply plugin: 'com.google.gms.google-services'

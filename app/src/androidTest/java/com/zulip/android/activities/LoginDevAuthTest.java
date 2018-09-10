@@ -1,4 +1,4 @@
-package com.zulip.android.activities;
+package com.zulip.android.satchat.activities;
 
 
 import android.support.test.espresso.ViewInteraction;
@@ -9,9 +9,9 @@ import android.test.suitebuilder.annotation.LargeTest;
 import android.view.View;
 import android.widget.Button;
 
-import com.zulip.android.R;
-import com.zulip.android.ZulipApp;
-import com.zulip.android.util.ZLog;
+import com.zulip.android.satchat.R;
+import com.zulip.android.satchat.ZulipApp;
+import com.zulip.android.satchat.util.ZLog;
 
 import org.hamcrest.Description;
 import org.hamcrest.Matcher;
@@ -29,7 +29,7 @@ import static android.support.test.espresso.matcher.ViewMatchers.assertThat;
 import static android.support.test.espresso.matcher.ViewMatchers.isDisplayed;
 import static android.support.test.espresso.matcher.ViewMatchers.withId;
 import static android.support.test.espresso.matcher.ViewMatchers.withText;
-import static com.zulip.android.helper.ViewAssertions.hasItemsCount;
+import static com.zulip.android.satchat.helper.ViewAssertions.hasItemsCount;
 import static org.hamcrest.Matchers.is;
 import static org.hamcrest.core.AllOf.allOf;
 

@@ -22,7 +22,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:theme="@style/AppTheme.AppBarOverlay"
-            app:layout_behavior="com.zulip.android.util.RemoveViewsOnScroll">
+            app:layout_behavior="com.zulip.android.satchat.util.RemoveViewsOnScroll">
 
             <include
                 android:id="@+id/toolbar"
@@ -31,7 +31,7 @@
         </android.support.design.widget.AppBarLayout>
 
 
-        <com.zulip.android.util.SwipeRemoveLinearLayout
+        <com.zulip.android.satchat.util.SwipeRemoveLinearLayout
             android:id="@+id/messageBoxContainer"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -41,7 +41,7 @@
             android:visibility="gone">
 
             <include layout="@layout/chatbox" />
-        </com.zulip.android.util.SwipeRemoveLinearLayout>
+        </com.zulip.android.satchat.util.SwipeRemoveLinearLayout>
 
         <android.support.design.widget.FloatingActionButton
             android:id="@+id/fab"
@@ -52,7 +52,7 @@
             android:src="@drawable/ic_mode_edit_24dp"
             app:backgroundTint="@color/colorPrimary"
             app:borderWidth="0dp"
-            app:layout_behavior="com.zulip.android.util.RemoveViewsOnScroll" />
+            app:layout_behavior="com.zulip.android.satchat.util.RemoveViewsOnScroll" />
     </android.support.design.widget.CoordinatorLayout>
 
     <include layout="@layout/stream_navigation" />

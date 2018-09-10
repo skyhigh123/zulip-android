@@ -1,4 +1,4 @@
-package com.zulip.android.helper;
+package com.zulip.android.satchat.helper;
 
 import android.content.res.Resources;
 import android.support.test.espresso.matcher.BoundedMatcher;
@@ -6,11 +6,11 @@ import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.TextView;
 
-import com.zulip.android.R;
-import com.zulip.android.models.Message;
-import com.zulip.android.models.MessageType;
-import com.zulip.android.viewholders.MessageHeaderParent;
-import com.zulip.android.viewholders.MessageHolder;
+import com.zulip.android.satchat.R;
+import com.zulip.android.satchat.models.Message;
+import com.zulip.android.satchat.models.MessageType;
+import com.zulip.android.satchat.viewholders.MessageHeaderParent;
+import com.zulip.android.satchat.viewholders.MessageHolder;
 
 import org.hamcrest.Description;
 import org.hamcrest.Matcher;

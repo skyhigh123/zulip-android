@@ -1,4 +1,4 @@
-package com.zulip.android.activities;
+package com.zulip.android.satchat.activities;
 
 
 import android.support.test.espresso.Root;
@@ -7,10 +7,10 @@ import android.support.test.filters.LargeTest;
 import android.support.test.rule.ActivityTestRule;
 import android.support.test.runner.AndroidJUnit4;
 
-import com.zulip.android.R;
-import com.zulip.android.ToastMatcher;
-import com.zulip.android.ZulipApp;
-import com.zulip.android.util.ZLog;
+import com.zulip.android.satchat.R;
+import com.zulip.android.satchat.ToastMatcher;
+import com.zulip.android.satchat.ZulipApp;
+import com.zulip.android.satchat.util.ZLog;
 
 import org.hamcrest.Matcher;
 import org.junit.Before;

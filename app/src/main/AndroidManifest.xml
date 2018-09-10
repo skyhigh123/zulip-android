@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.zulip.android">
+    package="com.zulip.android.satchat">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.GET_ACCOUNTS" />
@@ -9,6 +9,7 @@
     <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
 
     <uses-feature
         android:name="android.hardware.camera"
@@ -75,7 +76,7 @@
             <intent-filter>
                 <action android:name="com.google.android.c2dm.intent.RECEIVE" />
 
-                <category android:name="${applicationId}" />
+                <category android:name="com.zulip.android.satchat" />
             </intent-filter>
         </receiver>
         <receiver
@@ -96,7 +97,7 @@
 
         <meta-data
             android:name="io.fabric.ApiKey"
-            android:value="${fabricKey}" />
+            android:value="e90eb572d4b73885b40248b00b84c702d4efd2d5" />
 
         <receiver android:name=".widget.ZulipWidget">
             <intent-filter>

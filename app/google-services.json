@@ -1,0 +1,63 @@
+{
+  "project_info": {
+    "project_number": "302274739485",
+    "firebase_url": "https://satchat-a1bd2.firebaseio.com",
+    "project_id": "satchat-a1bd2",
+    "storage_bucket": "satchat-a1bd2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:302274739485:android:d3b76bca9a1e723c",
+        "android_client_info": {
+          "package_name": "com.zulip.android.satchat.satchat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "302274739485-r8vvthm4u59s3aa7osj4fb3a39hcmvva.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.zulip.android.satchat.satchat",
+            "certificate_hash": "a32707a7558555d8b4bfae7150f0473a6e0460cb"
+          }
+        },
+        {
+          "client_id": "302274739485-1928tahgrhdptoskk4c35q0dqhc55su2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.zulip.android.satchat.satchat",
+            "certificate_hash": "add020f1b9111d8b4d422853e2381216eb7ea32e"
+          }
+        },
+        {
+          "client_id": "302274739485-km5nbdhe8u9icc7a7snkfg8n357k1p97.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB7MHG-BTlT9Q_4wGob242JZJ8-TnYTd7E"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "302274739485-km5nbdhe8u9icc7a7snkfg8n357k1p97.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

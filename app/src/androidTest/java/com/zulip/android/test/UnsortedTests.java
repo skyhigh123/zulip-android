@@ -1,4 +1,4 @@
-package com.zulip.android.test;
+package com.zulip.android.satchat.test;
 
 import android.annotation.TargetApi;
 import android.content.Intent;
@@ -7,15 +7,15 @@ import android.test.ActivityUnitTestCase;
 
 import com.j256.ormlite.dao.RuntimeExceptionDao;
 import com.j256.ormlite.misc.TransactionManager;
-import com.zulip.android.ZulipApp;
-import com.zulip.android.activities.MessageListFragment;
-import com.zulip.android.activities.ZulipActivity;
-import com.zulip.android.models.Message;
-import com.zulip.android.models.MessageRange;
-import com.zulip.android.models.MessageType;
-import com.zulip.android.models.Person;
-import com.zulip.android.test.mutated.FakeAsyncGetOldMessages;
-import com.zulip.android.util.MessageListener.LoadPosition;
+import com.zulip.android.satchat.ZulipApp;
+import com.zulip.android.satchat.activities.MessageListFragment;
+import com.zulip.android.satchat.activities.ZulipActivity;
+import com.zulip.android.satchat.models.Message;
+import com.zulip.android.satchat.models.MessageRange;
+import com.zulip.android.satchat.models.MessageType;
+import com.zulip.android.satchat.models.Person;
+import com.zulip.android.satchat.test.mutated.FakeAsyncGetOldMessages;
+import com.zulip.android.satchat.util.MessageListener.LoadPosition;
 
 import org.json.JSONException;
 import org.json.JSONObject;

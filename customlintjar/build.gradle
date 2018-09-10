@@ -10,7 +10,7 @@ dependencies {
 
 jar {
     manifest {
-        attributes('Lint-Registry': 'com.zulip.android.customlintrules.MyIssueRegistry')
+        attributes('Lint-Registry': 'com.zulip.android.satchat.customlintrules.MyIssueRegistry')
     }
 }
 

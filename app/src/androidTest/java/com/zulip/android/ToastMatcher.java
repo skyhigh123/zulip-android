@@ -1,4 +1,4 @@
-package com.zulip.android;
+package com.zulip.android.satchat;
 
 import android.os.IBinder;
 import android.support.test.espresso.Root;

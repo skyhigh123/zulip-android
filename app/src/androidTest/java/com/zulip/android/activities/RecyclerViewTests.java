@@ -1,4 +1,4 @@
-package com.zulip.android.activities;
+package com.zulip.android.satchat.activities;
 
 
 import android.support.test.espresso.ViewInteraction;
@@ -7,12 +7,12 @@ import android.support.test.filters.LargeTest;
 import android.support.test.rule.ActivityTestRule;
 import android.support.test.runner.AndroidJUnit4;
 
-import com.zulip.android.R;
-import com.zulip.android.ZulipApp;
-import com.zulip.android.filters.NarrowFilterByDate;
-import com.zulip.android.helper.ViewAssertions;
-import com.zulip.android.models.MessageType;
-import com.zulip.android.util.ZLog;
+import com.zulip.android.satchat.R;
+import com.zulip.android.satchat.ZulipApp;
+import com.zulip.android.satchat.filters.NarrowFilterByDate;
+import com.zulip.android.satchat.helper.ViewAssertions;
+import com.zulip.android.satchat.models.MessageType;
+import com.zulip.android.satchat.util.ZLog;
 
 import org.apache.commons.lang.RandomStringUtils;
 import org.hamcrest.core.AllOf;
@@ -30,11 +30,11 @@ import static android.support.test.espresso.assertion.ViewAssertions.matches;
 import static android.support.test.espresso.matcher.ViewMatchers.isDisplayed;
 import static android.support.test.espresso.matcher.ViewMatchers.withId;
 import static android.support.test.espresso.matcher.ViewMatchers.withText;
-import static com.zulip.android.helper.Matchers.withFirstId;
-import static com.zulip.android.helper.Matchers.withMessageHeaderHolder;
-import static com.zulip.android.helper.Matchers.withMessageHolder;
-import static com.zulip.android.helper.Matchers.withMessageHolderAndClick;
-import static com.zulip.android.helper.ViewAssertions.checkMessagesOnlyFromToday;
+import static com.zulip.android.satchat.helper.Matchers.withFirstId;
+import static com.zulip.android.satchat.helper.Matchers.withMessageHeaderHolder;
+import static com.zulip.android.satchat.helper.Matchers.withMessageHolder;
+import static com.zulip.android.satchat.helper.Matchers.withMessageHolderAndClick;
+import static com.zulip.android.satchat.helper.ViewAssertions.checkMessagesOnlyFromToday;
 import static org.hamcrest.Matchers.allOf;
 import static org.hamcrest.Matchers.not;
 

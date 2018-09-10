@@ -1,10 +1,10 @@
-package com.zulip.android.test.mutated;
+package com.zulip.android.satchat.test.mutated;
 
-import com.zulip.android.activities.MessageListFragment;
-import com.zulip.android.models.Message;
-import com.zulip.android.models.MessageRange;
-import com.zulip.android.networking.AsyncGetOldMessages;
-import com.zulip.android.util.MessageListener.LoadPosition;
+import com.zulip.android.satchat.activities.MessageListFragment;
+import com.zulip.android.satchat.models.Message;
+import com.zulip.android.satchat.models.MessageRange;
+import com.zulip.android.satchat.networking.AsyncGetOldMessages;
+import com.zulip.android.satchat.util.MessageListener.LoadPosition;
 
 import java.util.ArrayList;
 import java.util.List;

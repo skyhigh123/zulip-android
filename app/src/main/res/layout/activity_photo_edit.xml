@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@android:color/black"
-    tools:context="com.zulip.android.activities.PhotoEditActivity"
+    tools:context="com.zulip.android.satchat.activities.PhotoEditActivity"
     tools:ignore="Overdraw">
 
     <FrameLayout
@@ -20,7 +20,7 @@
             android:contentDescription="@string/image_content_desp"
             android:scaleType="fitCenter" />
 
-        <com.zulip.android.util.DrawCustomView
+        <com.zulip.android.satchat.util.DrawCustomView
             android:id="@+id/draw_custom_view"
             android:layout_width="match_parent"
             android:layout_height="match_parent" />

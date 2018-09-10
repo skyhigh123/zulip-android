@@ -1,4 +1,4 @@
-package com.zulip.android.helper;
+package com.zulip.android.satchat.helper;
 
 import android.support.test.espresso.NoMatchingViewException;
 import android.support.test.espresso.ViewAssertion;
@@ -7,13 +7,13 @@ import android.text.format.DateUtils;
 import android.util.Log;
 import android.view.View;
 
-import com.zulip.android.ZulipApp;
-import com.zulip.android.activities.RecyclerMessageAdapter;
-import com.zulip.android.activities.ZulipActivity;
-import com.zulip.android.models.Message;
-import com.zulip.android.models.MessageType;
-import com.zulip.android.util.ZLog;
-import com.zulip.android.viewholders.MessageHeaderParent;
+import com.zulip.android.satchat.ZulipApp;
+import com.zulip.android.satchat.activities.RecyclerMessageAdapter;
+import com.zulip.android.satchat.activities.ZulipActivity;
+import com.zulip.android.satchat.models.Message;
+import com.zulip.android.satchat.models.MessageType;
+import com.zulip.android.satchat.util.ZLog;
+import com.zulip.android.satchat.viewholders.MessageHeaderParent;
 
 import org.json.JSONException;
 
@@ -22,7 +22,7 @@ import java.util.Date;
 import java.util.Locale;
 
 import static android.support.test.espresso.matcher.ViewMatchers.assertThat;
-import static com.zulip.android.activities.RecyclerViewTests.LOG_TAG;
+import static com.zulip.android.satchat.activities.RecyclerViewTests.LOG_TAG;
 import static junit.framework.Assert.assertTrue;
 
 public class ViewAssertions {
